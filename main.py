@@ -99,14 +99,14 @@ def format_weather_panel(
     lines.append(title_bar)
 
     # Location line
-    loc_text = f"Localização: (Sintra)lat={latitude:.4f}, lon={longitude:.4f}"
+    loc_text = f"Location: lat={latitude:.4f}, lon={longitude:.4f}"
     loc_line = (
         f"{border_color}║ {label_color}{loc_text:<46}{border_color}║{Style.RESET_ALL}"
     )
     lines.append(loc_line)
 
     # Time line
-    time_text = f"Data/hora: {time_str}"
+    time_text = f"Time: {time_str}"
     time_line = (
         f"{border_color}║ {label_color}{time_text:<46}{border_color}║{Style.RESET_ALL}"
     )
@@ -116,7 +116,7 @@ def format_weather_panel(
     lines.append(f"{border_color}╠" + "═" * 48 + f"╣{Style.RESET_ALL}")
 
     # Temperature
-    temp_label = "Temperatura"
+    temp_label = "Temperature"
     temp_line = (
         f"{border_color}║ {label_color}{temp_label:<15}: "
         f"{temp_color}{temp_str:<26}{border_color}║{Style.RESET_ALL}"
@@ -124,7 +124,7 @@ def format_weather_panel(
     lines.append(temp_line)
 
     # Wind speed
-    wind_label = "Velocidade do vento"
+    wind_label = "Wind Speed"
     wind_line = (
         f"{border_color}║ {label_color}{wind_label:<15}: "
         f"{value_color}{windspeed_str:<26}{border_color}║{Style.RESET_ALL}"
@@ -132,7 +132,7 @@ def format_weather_panel(
     lines.append(wind_line)
 
     # Wind direction
-    winddir_label = "Direcção do Vento"
+    winddir_label = "Wind Direction"
     winddir_line = (
         f"{border_color}║ {label_color}{winddir_label:<15}: "
         f"{value_color}{winddir_str:<26}{border_color}║{Style.RESET_ALL}"
@@ -220,4 +220,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+
     main()

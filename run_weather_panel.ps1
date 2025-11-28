@@ -51,5 +51,6 @@ $heightPx = $lines * $charHeight
 [Win32]::MoveWindow($hwnd, $left, $top, $widthPx, $heightPx, $true) | Out-Null
 
 # --- Run your Python panel ---
-Set-Location "C:\Users\diogo\weather-forecast-panel"
+Set-Location "C:\Users\user\weather-forecast-panel"
+
 python main.py
